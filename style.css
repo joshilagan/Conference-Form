@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.asterisk:after {
+    content: "*";
+    color: red;
+    margin-left:2px
+  }
+
+  .border-slate-400{
+    border: rgb(148 163 184);
+  }
+
+  /* @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    #country{
+      margin-left: 0;
+    }
+  } */

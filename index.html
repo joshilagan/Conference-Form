@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 font-sans flex justify-center sm:w-screen">
+    <div id="main-container" class="w-2/3 py-8">
+        <div class="my-5 mx-5">
+            <p class="text-4xl sm:text-3xl font-bold">Conference Registration</p>
+            <p class="font-medium mt-3">Please book for your confernece by filling the form below.</p>
+        </div>
+        <hr class="border-2">
+
+        <div class="form-container pt-5">
+        <form action="">
+            <div class="form-subcontainer my-3 mx-5">
+                <label for="fullName" class="asterisk">Full Name</label>
+                <input type="text" id="fullName" class="fName h-9 ml-11 w-64 pl-2 border-solid border-slate-400 rounded-md" name="firstName" placeholder="First Name">
+                <input type="text" id="lName" class="lName h-9 w-64 pl-2 border-solid border-slate-400 rounded-md lg:ml-0 sm:ml-32 sm:mt-3" name="lastName"  placeholder="Last Name">
+            </div>
+            <div class="form-subcontainer my-3 mx-5">
+                <label for="email" class="asterisk mr-2">E-mail</label>
+                <input id="email" type="email" class="ml-16 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="email" placeholder="myname@gmail.com" autocomplete="on">
+            </div>
+            <div class="form-subcontainer my-3 lg:mb-0 mx-5">
+                <label for="cp" class="asterisk">Phone Number</label>
+                <input id="cp" type="number"  class="h-9 ml-2 w-64 pl-2 border-solid border-slate-400 rounded-md" name="phone" placeholder="0917-000-0000"  pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}">
+            </div>
+            <div class="address mx-5">
+                <div class="form-subcontainer my-3 lg:mt-0">
+                    <label for="address" class="asterisk mr-0.5">Address</label>
+                    <input id="address" type="text"  class=" h-9 ml-14 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="houseBlkLt" placeholder="House Number/Block#/Lot#" autocomplete="on">
+                    <input id="street" type="text" class=" h-9 w-64 pl-2 border-solid border-slate-400 rounded-md sm:ml-32 sm:mt-3 lg:ml-0"  name="street" placeholder="Street">
+                </div>
+                <div class="form-subcontainer ml-32 my-3 lg:my-0 mx-5">
+                    <input id="subdivision" type="text"  class=" h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="subdivision" placeholder="Subdivision/Village">
+                    <input id="city" type="text" class=" h-9 w-64 pl-2 border-solid border-slate-400 rounded-md sm:mt-3 lg:m-0" name="city"  placeholder="City">
+                </div>
+                <div class="form-subcontainer ml-32 my-3 lg:mt-0 mx-5">
+                    <input id="province" type="text"  class=" h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" placeholder="State/Province">
+                    <input id="country" type="text" class="h-9 w-64 pl-2 border-solid border-slate-400 rounded-md sm:mt-3"  name="country" placeholder="Country" autocomplete="on">
+                </div>
+                <input id="zipcode" type="text" class=" h-9 w-64 pl-2 ml-32 border-solid border-slate-400 rounded-md mx-5" name="zipcode"  placeholder="Zipcode">
+            </div>
+            <div class="disclaimer bg-gray-200 p-5 rounded-lg my-7 mx-5">
+                <p class="disclaimer-msg">Payments are processed through Gcash or PayPal. You may pay using an existing Gcash or PayPal account, or any major credit card/debit card.</p>
+            </div>
+
+            <div class="products mx-5 my-8">
+                <p class="font-medium mb-7">Products</p>
+                <div class="meal-a flex ml-5  my-5">
+                    <input type="checkbox" id="member" class="mr-5 cursor-pointer" name="product"  value="member"/><span class="font-medium mr-8 md:mr-1 xl:mr-4 sm:mr-0"  >Conference Full-Access w/ Dinner (member)</span>
+                <p class="ml-72 lg:ml-60 md:ml-24 xl:ml-64 sm:ml-5">$100</p>
+                </div>
+                <hr style="border:1px dotted 30099CC" class="lg:w-5/4">
+                <div class="meal-b flex ml-5 my-5">
+                    <input type="checkbox" id="nonmember" class="mr-5 cursor-pointer" name="product" checked value="notMember"/><span class="font-medium">Conference Full-Access w/ Dinner (non-member)</span>   
+                    <p class="ml-72 md:ml-16 lg:ml-52 xl:ml-60 sm:ml-5">$170</p>
+                </div>
+            </div> 
+            <hr class="border-2">
+
+            <div class="pay-options my-8 mx-5">
+                <p class="font-medium">Payment Methods</p>
+                <div class="card-enclosure flex justify-between lg:flex-row lg:mx-10 md:ml-36 md:flex-col md:mx-auto md:ml-1 sm:flex-col w-5/4 my-5 ml-14">
+                    <div class="credit flex items-center">
+                        <input type="radio" id="creditz" name="paymethod" class="mx-3 cursor-pointer" value="credit"/> Credit
+                        <img src="./img/new_logo_bg.png" width="190" class="ml-3" alt="logo">
+                    </div>
+                    <div class="express flex items-center lg:mt-0 md:mt-8 sm:mt-4">
+                        <input type="radio" id="express" name="paymethod" class="mx-3 cursor-pointer" value="express" checked/> Express
+                        <img src="./img/gcash-pp-removebg.png"  width="140" class="ml-3 sm:ml-8" alt="express">
+                    </div>
+                </div>
+            </div>
+
+            <div class="credit-info mx-5">
+                <!-- <p class="font-medium">Credit Card</p>
+                <div class="card-subcontainer ml-20">
+                    <input id="cFname" type="text"  class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="cFName" placeholder="First Name">
+                    <input id="cMname" type="text"  class="sm:mt-3 lg:my-0 h-9 w-28 pl-1 border-solid border-slate-400 rounded-md"  name="cMInitial" placeholder="Middle Initial">
+                    <input id="cLname" type="text"  class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="cLName" placeholder="Last Name">
+                </div>
+                <div class="card-subcontainer ml-20">
+                    <input id="cNumber" type="text"  class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="creditCardNumber" placeholder="Credit Card Number">
+                    <input id="sCode" type="text"  class="sm:mt-3 lg:mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="securityCode" placeholder="Security Code">
+                </div>    
+                <div class="card-subcontainer ml-20">
+                    <input id="exp-month" type="text" class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="expMonth"  placeholder="Expiration Month">
+                    <input id="exp-yr" type="text" class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="expYear" placeholder="Expiration Year">
+                </div>
+                <p class="font-medium">Billing Address</p>
+                <div class="billing-address mb-10">
+                    <div class="billing-subcontainer ml-20">
+                        <input id="bhouse-num" type="text" class="mt-3  h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="bhouseLotBlk"  placeholder="House Number/Block#/Lot#">
+                        <input id="bstreet" type="text" class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="bstreet" placeholder="Street">
+                    </div>
+                    <div class="billing-subcontainer ml-20">
+                        <input id="bsubdivision" type="text" class="mt-3  h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="bsubdivision" placeholder="Subdivision/Village">
+                        <input id="bcity" type="text" class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="bcity" placeholder="City">
+                    </div>
+                    <div class="billing-subcontainer mb-3 ml-20">
+                        <input id="bprovince" type="text" class="mt-3  h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="bprovince" placeholder="State/Province">
+                        <input id="bcountry" type="text" class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="bcountry" placeholder="Country">
+                    </div>
+                    <input id="bzipcode" type="text" class="ml-20 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="bzipcode" placeholder="Zipcode">
+                </div> -->
+            </div>
+            <hr class="border-2 my-8">
+            <div class="flex justify-center">
+                <button type="submit" class="btn p-1 pb-2 w-28 border-solid rounded-xl bg-cyan-400 font-medium text-xl">
+                    Submit
+                </button>
+        </div>
+        </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
