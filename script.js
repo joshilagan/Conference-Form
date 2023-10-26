@@ -36,12 +36,12 @@ function onFocus(){
     creditInfo.innerHTML = `<p class="font-medium">Credit Card</p>
     <div class="card-subcontainer ml-20">
         <input id="cFname" type="text"  class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="cFName" placeholder="First Name">
-        <input id="cMname" type="text"  class="sm:mt-3 lg:my-0 h-9 w-28 pl-1 border-solid border-slate-400 rounded-md"  name="cMInitial" placeholder="Middle Initial">
+        <input id="cMname" type="text"  class="mt-3 lg:my-0 h-9 w-28 pl-1 border-solid border-slate-400 rounded-md"  name="cMInitial" placeholder="Middle Initial">
         <input id="cLname" type="text"  class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="cLName" placeholder="Last Name">
     </div>
     <div class="card-subcontainer ml-20">
         <input id="cNumber" type="text"  class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="creditCardNumber" placeholder="Credit Card Number">
-        <input id="sCode" type="text"  class="sm:mt-3 lg:mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="securityCode" placeholder="Security Code">
+        <input id="sCode" type="text"  class="mt-3 lg:mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md"  name="securityCode" placeholder="Security Code">
     </div>    
     <div class="card-subcontainer ml-20">
         <input id="exp-month" type="text" class="mt-3 h-9 w-64 pl-2 border-solid border-slate-400 rounded-md" name="expMonth"  placeholder="Expiration Month">
